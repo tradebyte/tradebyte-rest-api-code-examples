@@ -1,8 +1,8 @@
 <?php
 /**
- * This example script gets stocks for all articles from the Tradebyte REST API.
+ * This example script gets information on products and on its related articles from the Tradebyte REST API.
  *
- * @author Hendrik Bahr <bahr@fatchip.de>
+ * @author Marcos Doellerer<marcos.doellerer@fatchip.de>
  */
 
 /*
@@ -18,7 +18,7 @@ $sChannelId = '5678'; // Your digit channel ID
 /*
  * Get data from REST API with curl
  */
-$sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/stock/?channel=" .  $sChannelId;
+$sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/products/?channel=" . $sChannelId;
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);
 curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
@@ -29,7 +29,7 @@ curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($oCurl, CURLOPT_TIMEOUT, 3600);
 $sResponse = curl_exec($oCurl);
 if ($sResponse === false) {
-	echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
+    echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
 }
 curl_close($oCurl);
 
@@ -37,10 +37,19 @@ curl_close($oCurl);
  * Process data as you need
  */
 $oXml = simplexml_load_string($sResponse);
-if ($oXml && $oXml->ARTICLE) {
-	foreach ($oXml->ARTICLE as $oProduct) {
-		echo (string)$oProduct->A_NR . ": " . (string)$oProduct->A_STOCK . PHP_EOL;
-	}
+if ($oXml && $oXml->PRODUCTDATA) {
+
+    if ($oXml->SUPPLIER){
+        echo "Supplier: " . $oXml->SUPPLIER->NAME . PHP_EOL;
+    }
+
+    foreach ($oXml->PRODUCTDATA->PRODUCT as $oProduct) {
+        echo "Product n° " . (string)$oProduct->P_NR . " title: " . (string)$oProduct->P_NAME->VALUE . PHP_EOL;
+
+        foreach ($oProduct->ARTICLEDATA->ARTICLE as $oArticle) {
+            echo "Article n° " . (string)$oArticle->A_NR . " ean: " . (string)$oArticle->A_EAN . PHP_EOL;
+        }
+    }
 } else {
-	print_r($sResponse);
+    print_r($sResponse);
 }
