@@ -2,11 +2,23 @@
 /**
  * This example script prepares and sends information on orders to the Tradebyte REST API.
  *
- * @author Marcos Doellerer<marcos.doellerer@fatchip.de>
+ * @author Marcos Doellerer <marcos.doellerer@fatchip.de>
  */
 
-$sNewLine = "\n";
+/*
+ * API-Credentials - modify to your personal access credentials
+ *
+ * @see https://tradebyte.io/how-to/generate-rest-api-credentials-in-tb-one/
+ */
+$sApiUser = 'api-user'; // Your API username
+$sApiPassword = 'api-password'; // Your API password
+$sMerchantId = '1234'; // Your digit merchant ID
+$sChannelId = '5678'; // Your digit channel ID
 
+/*
+ * Example order XML
+ */
+$sNewLine = "\n";
 $sXml = '<?xml version="1.0" encoding="UTF-8"?>' . $sNewLine;
 $sXml .='<ORDER>' . $sNewLine;
 $sXml .='    <ORDER_DATA>' . $sNewLine;
@@ -53,17 +65,10 @@ $sXml .='        </ITEM>' . $sNewLine;
 $sXml .='    </ITEMS>' . $sNewLine;
 $sXml .='</ORDER>' . $sNewLine;
 
-
-$sApiUser = 'api-user'; // Your API username
-$sApiPassword = 'api-password'; // Your API password
-$sMerchantId = '1234'; // Your digit merchant ID
-$sChannelId = '5678'; // Your digit channel ID
-
 /*
  * Send data to REST API with curl
  */
 $sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/orders/?channel=" . $sChannelId;
-
 
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);

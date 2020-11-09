@@ -1,9 +1,9 @@
 <?php
 /**
- * This example script gets information on Order Messages from the Tradebyte REST API.
- * Then marks them as exported
+ * This example script gets information on changed order-status from the Tradebyte REST API.
+ * Then it marks the messages as processed.
  *
- * @author Marcos Doellerer<marcos.doellerer@fatchip.de>
+ * @author Marcos Doellerer <marcos.doellerer@fatchip.de>
  */
 
 /*
@@ -41,44 +41,31 @@ curl_close($oCurl);
  */
 $oXml = simplexml_load_string($sResponse);
 if ($oXml) {
-
-    $messagesImported = [];
-
     foreach ($oXml->MESSAGE as $oMessage) {
-        $messagesImported[] = (string)$oMessage->TB_ORDER_ID;
         echo "Message Type: " . (string)$oMessage->MESSAGE_TYPE . PHP_EOL;
         echo " Order number in Channel : " . (string)$oMessage->CHANNEL_ORDER_ID . PHP_EOL;
-    }
-    /**
-     * Sending confirmation to Tradebyte
-     */
-    sendReceivedFlagToTradebyte($messagesImported, $sMerchantId, $sChannelId, $sApiUser, $sApiPassword);
 
+	    /**
+	     * Sending confirmation to Tradebyte
+	     */
+	    $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . (string)$oMessage->TB_ORDER_ID . "/processed?channel=" . $sChannelId;
+	    $oCurl = curl_init();
+	    curl_setopt($oCurl, CURLOPT_URL, $sUrl);
+	    curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+	    curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
+	    curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
+	    curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+	    curl_setopt($oCurl, CURLOPT_HEADER, 0);
+	    curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
+	    curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
+	    $sResponse = curl_exec($oCurl);
+	    if ($sResponse === false) {
+		    echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
+	    }else{
+		    echo "'Message received' confirmation for Message id: " . $messageId . " successfully sent." . PHP_EOL;
+	    }
+	    curl_close($oCurl);
+    }
 } else {
     print_r($sResponse);
-}
-
-function sendReceivedFlagToTradebyte($arrayOfMessageIds, $sMerchantId, $sChannelId, $sApiUser, $sApiPassword){
-    foreach ($arrayOfMessageIds as $messageId){
-
-        $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . $messageId . "/processed?channel=" . $sChannelId;
-
-        $oCurl = curl_init();
-        curl_setopt($oCurl, CURLOPT_URL, $sUrl);
-        curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
-        curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
-        curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($oCurl, CURLOPT_HEADER, 0);
-        curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
-        $sResponse = curl_exec($oCurl);
-        if ($sResponse === false) {
-            echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-        }
-        else{
-            echo "'Message received' confirmation for Message id: " . $messageId . " successfully sent." . PHP_EOL;
-        }
-        curl_close($oCurl);
-    }
 }

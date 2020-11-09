@@ -2,11 +2,24 @@
 /**
  * This example script prepares and sends information on products and on its related articles to the Tradebyte REST API.
  *
- * @author Marcos Doellerer<marcos.doellerer@fatchip.de>
+ * @author Marcos Doellerer <marcos.doellerer@fatchip.de>
  */
 
-$sNewLine = "\n";
 
+/*
+ * API-Credentials - modify to your personal access credentials
+ *
+ * @see https://tradebyte.io/how-to/generate-rest-api-credentials-in-tb-one/
+ */
+$sApiUser = 'api-user'; // Your API username
+$sApiPassword = 'api-password'; // Your API password
+$sMerchantId = '1234'; // Your digit merchant ID
+$sChannelId = '5678'; // Your digit channel ID
+
+/*
+ * Product XML
+ */
+$sNewLine = "\n";
 $sXml = '<?xml version="1.0" encoding="UTF-8"?>' . $sNewLine;
 $sXml .='<TBCATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:noNamespaceSchemaLocation="http://api.trade-server.net/schema/all_in_one/tb-cat_1_2_import.xsd">' . $sNewLine;
 $sXml .='    <PRODUCTDATA>' . $sNewLine;
@@ -37,20 +50,14 @@ $sXml .='                   <A_MWST>3</A_MWST>' . $sNewLine;
 $sXml .='               </A_PRICE>' . $sNewLine;
 $sXml .='            </A_PRICEDATA>' . $sNewLine;
 $sXml .='            <A_MEDIADATA>' . $sNewLine;
-$sXml .='                <A_MEDIA type="IMAGE" sort="0">https://your.shop/pictures//product/1/picture001.jpg</A_MEDIA>' . $sNewLine;
+$sXml .='                <A_MEDIA type="IMAGE" sort="0">https://i.picsum.photos/id/1000/1000/1000.jpg?hmac=YU8XuX62UAwEXXFELdXRqFZDQJfD9JDwDv13xTWCvL8</A_MEDIA>' . $sNewLine;
 $sXml .='            </A_MEDIADATA>' . $sNewLine;
 $sXml .='            <A_STOCK>48</A_STOCK>' . $sNewLine;
 $sXml .='        </ARTICLE>' . $sNewLine;
 $sXml .='    </ARTICLEDATA>' . $sNewLine;
 $sXml .='    </PRODUCT>' . $sNewLine;
 $sXml .='    </PRODUCTDATA>' . $sNewLine;
-$sXml .='    </TBCATALOG>' . $sNewLine;
-
-
-$sApiUser = 'api-user'; // Your API username
-$sApiPassword = 'api-password'; // Your API password
-$sMerchantId = '1234'; // Your digit merchant ID
-$sChannelId = '5678'; // Your digit channel ID
+$sXml .='</TBCATALOG>' . $sNewLine;
 
 /**
  * Name the file according to specifications
@@ -62,7 +69,6 @@ $fileName = "TBCAT_".date("YmdHis").".xml";
  * Send data to REST API with curl
  */
 $sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/sync/in/" . $fileName;
-
 
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);

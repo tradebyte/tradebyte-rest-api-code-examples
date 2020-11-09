@@ -2,7 +2,7 @@
 /**
  * This example script gets information on products and on its related articles from the Tradebyte REST API.
  *
- * @author Marcos Doellerer<marcos.doellerer@fatchip.de>
+ * @author Marcos Doellerer <marcos.doellerer@fatchip.de>
  */
 
 /*
