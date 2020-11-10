@@ -29,7 +29,6 @@ $sXml .= '    <SKU>1302</SKU>' . $sNewLine;
 $sXml .= '    <CHANNEL_SIGN>55test</CHANNEL_SIGN>' . $sNewLine;
 $sXml .= '    <CHANNEL_ORDER_ID>test858555/CHANNEL_ORDER_ID>' . $sNewLine;
 $sXml .= '    <CHANNEL_ORDER_ITEM_ID>kjgded-555</CHANNEL_ORDER_ITEM_ID>' . $sNewLine;
-$sXml .= '    <CHANNEL_SKU>54454</CHANNEL_SKU>' . $sNewLine;
 $sXml .= '    <QUANTITY>1</QUANTITY>' . $sNewLine;
 $sXml .= '    <IDCODE>DE57373542354235BR</IDCODE>' . $sNewLine;
 $sXml .= '    <DATE_CREATED>2020-10-15T14:45:32</DATE_CREATED>' . $sNewLine;
