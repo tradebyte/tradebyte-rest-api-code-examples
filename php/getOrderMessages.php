@@ -46,26 +46,26 @@ if ($oXml) {
         echo "Message Type: " . (string)$oMessage->MESSAGE_TYPE . PHP_EOL;
         echo " Order number in Channel : " . (string)$oMessage->CHANNEL_ORDER_ID . PHP_EOL;
 
-	    /**
-	     * Sending confirmation to Tradebyte
-	     */
-	    $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . (int)$oMessage->MESSAGE_ID . "/processed?channel=" . $sChannelId;
-	    $oCurl = curl_init();
-	    curl_setopt($oCurl, CURLOPT_URL, $sUrl);
-	    curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-	    curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
-	    curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
-	    curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
-	    curl_setopt($oCurl, CURLOPT_HEADER, 0);
-	    curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
-	    curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
-	    $sResponse = curl_exec($oCurl);
-	    if ($sResponse === false) {
-		    echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-	    }else{
-		    echo "'Message received' confirmation for Message id: " . $oMessage->MESSAGE_ID . " successfully sent." . PHP_EOL;
-	    }
-	    curl_close($oCurl);
+        /**
+         * Sending confirmation to Tradebyte
+         */
+        $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . (int)$oMessage->MESSAGE_ID . "/processed?channel=" . $sChannelId;
+        $oCurl = curl_init();
+        curl_setopt($oCurl, CURLOPT_URL, $sUrl);
+        curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
+        curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
+        curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($oCurl, CURLOPT_HEADER, 0);
+        curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
+        $sResponse = curl_exec($oCurl);
+        if ($sResponse === false) {
+            echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
+        } else {
+            echo "'Message received' confirmation for Message id: " . $oMessage->MESSAGE_ID . " successfully sent." . PHP_EOL;
+        }
+        curl_close($oCurl);
     }
 } else {
     print_r($sResponse);

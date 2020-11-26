@@ -46,8 +46,8 @@ if ($oXml) {
     foreach ($oXml->ORDER as $oOrder) {
         echo "Order Date " . (string)$oOrder->ORDER_DATA->ORDER_DATE . PHP_EOL;
 
-        $ordersImported[] = (string)$oOrder->ORDER_DATA->TB_ID;
-        echo "Order ID in Tradebyte " . (string)$oOrder->ORDER_DATA->TB_ID . PHP_EOL;
+        $orderId = (string)$oOrder->ORDER_DATA->TB_ID;
+        echo "Order ID in Tradebyte " . $orderId . PHP_EOL;
         echo "Order Number (in channel): " . (string)$oOrder->ORDER_DATA->CHANNEL_NO . PHP_EOL;
 
         /**
@@ -70,38 +70,36 @@ if ($oXml) {
                 " Quantity: " . (string)$oOrderItem->QUANTITY .
                 " Price: " . (string)$oOrderItem->ITEM_PRICE . PHP_EOL;
         }
+        /**
+         * Sending confirmation to Tradebyte
+         */
+        sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPassword);
     }
-
-    /**
-     * Sending confirmation to Tradebyte
-     */
-    sendExportedFlagToTradebyte($ordersImported, $sMerchantId, $sApiUser, $sApiPassword);
 } else {
     print_r($sResponse);
 }
 
 
 
-function sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPassword){
+function sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPassword)
+{
 
-    foreach ($arrayOfIds as $orderId) {
-        $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/orders/" . $orderId . "/exported?";
+    $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/orders/" . $orderId . "/exported?";
 
-        $oCurl = curl_init();
-        curl_setopt($oCurl, CURLOPT_URL, $sUrl);
-        curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
-        curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
-        curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($oCurl, CURLOPT_HEADER, 0);
-        curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
-        $sResponse = curl_exec($oCurl);
-        if ($sResponse === false) {
-            echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-        } else {
-            echo "Export Confirmation for Order: " . $orderId . " successfully sent." . PHP_EOL;
-        }
-        curl_close($oCurl);
+    $oCurl = curl_init();
+    curl_setopt($oCurl, CURLOPT_URL, $sUrl);
+    curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($oCurl, CURLOPT_USERPWD, $sApiUser . ":" . $sApiPassword);
+    curl_setopt($oCurl, CURLOPT_POST, true); // This is a POST request!
+    curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($oCurl, CURLOPT_HEADER, 0);
+    curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($oCurl, CURLOPT_TIMEOUT, 30);
+    $sResponse = curl_exec($oCurl);
+    if ($sResponse === false) {
+        echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
+    } else {
+        echo "Export Confirmation for Order: " . $orderId . " successfully sent." . PHP_EOL;
     }
+    curl_close($oCurl);
 }
