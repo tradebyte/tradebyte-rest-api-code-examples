@@ -84,7 +84,7 @@ if ($oXml) {
 
 
 
-function sendExportedFlagToTradebyte($arrayOfIds, $sMerchantId, $sApiUser, $sApiPassword){
+function sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPassword){
 
     foreach ($arrayOfIds as $orderId){
         $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/orders/" . $orderId . "/exported?";
