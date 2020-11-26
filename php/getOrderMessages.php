@@ -48,7 +48,7 @@ if ($oXml) {
 	    /**
 	     * Sending confirmation to Tradebyte
 	     */
-	    $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . (string)$oMessage->TB_ORDER_ID . "/processed?channel=" . $sChannelId;
+	    $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/" . (int)$oMessage->MESSAGE_ID . "/processed?channel=" . $sChannelId;
 	    $oCurl = curl_init();
 	    curl_setopt($oCurl, CURLOPT_URL, $sUrl);
 	    curl_setopt($oCurl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
