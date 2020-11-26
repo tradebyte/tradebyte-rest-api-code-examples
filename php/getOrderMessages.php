@@ -62,7 +62,7 @@ if ($oXml) {
 	    if ($sResponse === false) {
 		    echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
 	    }else{
-		    echo "'Message received' confirmation for Message id: " . $messageId . " successfully sent." . PHP_EOL;
+		    echo "'Message received' confirmation for Message id: " . $oMessage->MESSAGE_ID . " successfully sent." . PHP_EOL;
 	    }
 	    curl_close($oCurl);
     }
