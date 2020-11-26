@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script gets information on products and on its related articles from the Tradebyte REST API.
  *
@@ -38,8 +39,7 @@ curl_close($oCurl);
  */
 $oXml = simplexml_load_string($sResponse);
 if ($oXml && $oXml->PRODUCTDATA) {
-
-    if ($oXml->SUPPLIER){
+    if ($oXml->SUPPLIER) {
         echo "Supplier: " . $oXml->SUPPLIER->NAME . PHP_EOL;
     }
 

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script gets information on products and on its related articles from the Tradebyte REST API.
  *
@@ -20,7 +21,7 @@ $sChannelId = '5678'; // Your digit channel ID
  */
 
 $iDelta = time() - (3600 * 12); //Get the delta for last 12 hours (current time minus 12 hours)
-$sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/products/?channel=" .  $sChannelId . '&delta=' . $iDelta;
+$sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/products/?channel=" .  $sChannelId . '&delta=' . $iDelta;
 
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);
@@ -41,8 +42,7 @@ curl_close($oCurl);
  */
 $oXml = simplexml_load_string($sResponse);
 if ($oXml && $oXml->PRODUCTDATA) {
-
-    if ($oXml->SUPPLIER){
+    if ($oXml->SUPPLIER) {
         echo "Supplier: " . $oXml->SUPPLIER->NAME . PHP_EOL;
     }
 

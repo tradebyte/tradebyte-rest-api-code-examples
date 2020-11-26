@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script prepares and sends information on order status changes to the Tradebyte REST API.
  *
@@ -38,7 +39,7 @@ $sXml .= '</MESSAGES_LIST>' . $sNewLine;
 /*
  * Send data to REST API with curl
  */
-$sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/messages/?";
+$sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/messages/?";
 
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);
@@ -53,8 +54,7 @@ curl_setopt($oCurl, CURLOPT_POSTFIELDS, $sXml);
 $sResponse = curl_exec($oCurl);
 if ($sResponse === false) {
     echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-}
-else {
+} else {
     print_r($sResponse);
 }
 curl_close($oCurl);

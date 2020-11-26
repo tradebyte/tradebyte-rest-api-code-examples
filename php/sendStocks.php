@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script prepares and sends information on products stocks to the Tradebyte REST API.
  *
@@ -22,7 +23,7 @@ $sChannelId = '5678'; // Your digit channel ID
 $sNewLine = "\n";
 // Values obtained in the shop, for example, to be sent to Tradebyte
 $aStockInfo['article_number'] = "5552-55-853-6-2";      //Article Number
-$aStockInfo['stock_value'] = 42;					    //updated stock
+$aStockInfo['stock_value'] = 42;                        //updated stock
 /**
  * Preparing Xml structure according to Tradebyte specs
  */
@@ -39,7 +40,7 @@ $sXml .= "</TBCATALOG>" . $sNewLine;
 /**
  * Send data to REST API with curl
  */
-$sUrl = "https://rest.trade-server.net/" . $sMerchantId ."/articles/stock";
+$sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/articles/stock";
 
 $oCurl = curl_init();
 curl_setopt($oCurl, CURLOPT_URL, $sUrl);
@@ -54,7 +55,6 @@ curl_setopt($oCurl, CURLOPT_POSTFIELDS, $sXml);
 $sResponse = curl_exec($oCurl);
 if ($sResponse === false) {
     echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-}
-else {
+} else {
     echo "Stock sent successfully";
 }

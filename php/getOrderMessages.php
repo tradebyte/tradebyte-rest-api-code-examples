@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script gets information on changed order-status from the Tradebyte REST API.
  * Then it marks the messages as processed.

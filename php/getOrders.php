@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This example script gets information on orders not yet exported from the Tradebyte REST API.
  * Then marks them as exported
@@ -40,7 +41,6 @@ curl_close($oCurl);
 $oXml = simplexml_load_string($sResponse);
 
 if ($oXml) {
-
     $ordersImported = [];
 
     foreach ($oXml->ORDER as $oOrder) {
@@ -53,7 +53,7 @@ if ($oXml) {
         /**
          * Example of Shipping Information
          */
-        if ($oOrder->SELL_TO){
+        if ($oOrder->SELL_TO) {
             echo "Payment Address: " . $oXml->ORDER->SELL_TO->STREET_NO . PHP_EOL;
         }
         /**
@@ -69,7 +69,6 @@ if ($oXml) {
             echo "Article EAN " . (string)$oOrderItem->EAN .
                 " Quantity: " . (string)$oOrderItem->QUANTITY .
                 " Price: " . (string)$oOrderItem->ITEM_PRICE . PHP_EOL;
-
         }
     }
 
@@ -77,7 +76,6 @@ if ($oXml) {
      * Sending confirmation to Tradebyte
      */
     sendExportedFlagToTradebyte($ordersImported, $sMerchantId, $sApiUser, $sApiPassword);
-
 } else {
     print_r($sResponse);
 }
@@ -86,7 +84,7 @@ if ($oXml) {
 
 function sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPassword){
 
-    foreach ($arrayOfIds as $orderId){
+    foreach ($arrayOfIds as $orderId) {
         $sUrl = "https://rest.trade-server.net/" . $sMerchantId . "/orders/" . $orderId . "/exported?";
 
         $oCurl = curl_init();
@@ -101,8 +99,7 @@ function sendExportedFlagToTradebyte($orderId, $sMerchantId, $sApiUser, $sApiPas
         $sResponse = curl_exec($oCurl);
         if ($sResponse === false) {
             echo 'Error: ' . curl_error($oCurl) . ' ErrorNr: ' . curl_errno($oCurl);
-        }
-        else{
+        } else {
             echo "Export Confirmation for Order: " . $orderId . " successfully sent." . PHP_EOL;
         }
         curl_close($oCurl);
