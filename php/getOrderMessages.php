@@ -12,10 +12,10 @@
  *
  * @see https://tradebyte.io/how-to/generate-rest-api-credentials-in-tb-one/
  */
-$sApiUser = 'api-user'; // Your API username
-$sApiPassword = 'api-password'; // Your API password
-$sMerchantId = '1234'; // Your digit merchant ID
-$sChannelId = '5678'; // Your digit channel ID
+$sApiUser = 'API_TBMarket'; // Your API username
+$sApiPassword = 'fatchip123'; // Your API password
+$sMerchantId = '1566'; // Your digit merchant ID
+$sChannelId = '1289'; // Your digit channel ID
 
 
 /*

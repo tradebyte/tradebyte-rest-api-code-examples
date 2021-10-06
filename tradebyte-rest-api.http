@@ -1,0 +1,20 @@
+### Messages
+GET https://rest.trade-server.net/{{merchantId}}/messages/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+### Stock
+GET https://rest.trade-server.net/{{merchantId}}/stock/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+### Catalogue
+GET https://rest.trade-server.net/{{merchantId}}/products/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+### Orders
+GET https://rest.trade-server.net/{{merchantId}}/orders/2343/invoice/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
