@@ -1,0 +1,13 @@
+### Catalogue sync
+POST https://rest.trade-server.net/{{merchantId}}/sync/in/?channel={{channelId}}
+Content-Type: application/xml
+Authorization: basic {{username}} {{password}}
+
+< TBCAT_20211007083207.xml
+
+### Catalogue retrieve
+GET https://rest.trade-server.net/{{merchantId}}/products/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+###

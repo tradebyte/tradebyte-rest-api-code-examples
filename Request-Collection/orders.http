@@ -1,0 +1,9 @@
+### Orders Invoice
+GET https://rest.trade-server.net/{{merchantId}}/orders/{{orderId}}/invoice/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+### Orders unprocessed
+GET http://rest.trade-server.net/{{merchantId}}/orders/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}

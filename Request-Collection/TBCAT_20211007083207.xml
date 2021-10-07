@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TBCATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4" xsi:noNamespaceSchemaLocation="http://api.trade-server.net/schema/all_in_one/tb-cat_1_4_import.xsd">
+<PRODUCTDATA>
+    <PRODUCT>
+        <P_NR>2401</P_NR>
+        <P_NAME>
+            <VALUE xml:lang="x-default">Bindung O'BRIEN DECADE CT</VALUE>
+        </P_NAME>
+        <P_TEXT>
+            <VALUE xml:lang="x-default">
+
+O'Brien Decade CT Boot
+    Die Decade Pro Bindung ist nicht nur
+ Close-Toe Boots mit hammer Style, sondern es war das Ziel den Komfort
+von normalen Boots in eine Wakeboard-Bindung einzubringen, dabei
+leichtgewichtig zu bleiben, und damit perfekte Performance auf dem
+Wasser zu ermöglichen.
+
+  Die Wakeboard-Bindung ist in der Größe gleich bleibend, gibt also im
+Laufe der Zeit nicht nach und sitzt somit wie ein perfekter Schuh. Ein
+ergonomisches und stoßabsorbierendes Fussbett sorgt für weiche
+Landungen.
+ </VALUE>
+        </P_TEXT>
+        <P_KEYWORDS>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">bindung</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">decade</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">schuh</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">wakeboarding</VALUE>
+            </P_KEYWORD>
+        </P_KEYWORDS>
+        <P_MEDIADATA>
+            <P_MEDIA type="image" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/obrien_decade_ct_boot_2010_1.jpg</P_MEDIA>
+        </P_MEDIADATA>
+        <P_CATEGORIES>
+            <P_CATEGORY type="cluster" identifier="key" key="Bindungen">Wakeboarding|Bindungen</P_CATEGORY>
+        </P_CATEGORIES>
+        <ARTICLEDATA>
+            <ARTICLE>
+                <A_NR>2401</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883282</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>058e613db53d782adfc9f2ccb43c45fe</A_NR2>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>359.00</A_VK>
+                        <A_VK_OLD>399.00</A_VK_OLD>
+                        <A_UVP>399.00</A_UVP>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/obrien_decade_ct_boot_2010_1.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>16</A_STOCK>
+            </ARTICLE>
+        </ARTICLEDATA>
+    </PRODUCT>
+    <PRODUCT>
+        <P_NR>1302</P_NR>
+        <P_NAME>
+            <VALUE xml:lang="x-default">Kiteboard CABRINHA CALIBER</VALUE>
+        </P_NAME>
+        <P_TEXT>
+            <VALUE xml:lang="x-default">
+
+Cabrinha Caliber 
+    Das Caliber meint es ernst mit Freestyle
+und Freeride. Wenn du schnell und hart kiten willst, dann ist das
+Caliber passend für dich!
+
+   Das Caliber hat eine flachere Rockerlinie als das Custom, was es
+knackig und lebhaft macht. Es beschleunigt sehr schnell und behält den
+Speed auch durch Windlöcher hindurch. Die Outline des Caliber und der
+Flexverlauf bringen dir härtesten Pop beim Absprung, egal ob du unhooked
+ oder hooked fährst. Das quadkonkave Unterwasserschiff gibt dir
+maximalen Grip bei Starkwind und in kabbeligem Wasser.
+
+Ausstattungsmerkmale:
+
+neue unidirektionale Carbonlage für kräftigen Pop und schnelle Rückmeldung
+unterschiedliches 3D Topsheet Design je Größe, für konstanteren Flex und Pop
+digital gedruckte Oberfläche mit metallic Effekt, digital bedruckte Basis für längere Haltbarkeit
+24??(61cm) / 26?? ( 66cm) / 28?? (71cm) Stand-Optionen
+
+Lieferumfang:
+   Alle Boards werden mit Finnen, Finnenschrauben und Grab Handle (+ dazugehörige Schrauben) geliefert.
+
+Größen:
+   127 x 38
+   130 x 40
+   133 x 41
+   136 x 42
+   139 x 43
+ </VALUE>
+        </P_TEXT>
+        <P_BRAND identifier="key" key="Cabrinha">Cabrinha</P_BRAND>
+        <P_KEYWORDS>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">kiteboard</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">kite</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">board</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">caliber</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">cabrinha</VALUE>
+            </P_KEYWORD>
+        </P_KEYWORDS>
+        <P_MEDIADATA>
+            <P_MEDIA type="image" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/cabrinha_caliber_2011.jpg</P_MEDIA>
+            <P_MEDIA type="image" sort="1">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/2/cabrinha_caliber_2011_deck.jpg</P_MEDIA>
+            <P_MEDIA type="image" sort="2">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/3/cabrinha_caliber_2011_bottom.jpg</P_MEDIA>
+        </P_MEDIADATA>
+        <P_CATEGORIES>
+            <P_CATEGORY type="cluster" identifier="key" key="Kiteboards">Kiteboarding|Kiteboards</P_CATEGORY>
+        </P_CATEGORIES>
+        <ARTICLEDATA>
+            <ARTICLE>
+                <A_NR>1302</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883299</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>058de8224773a1d5fd54d523f0c823e0</A_NR2>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>479.00</A_VK>
+                        <A_VK_OLD>499.00</A_VK_OLD>
+                        <A_UVP>499.00</A_UVP>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/cabrinha_caliber_2011.jpg</A_MEDIA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/2/cabrinha_caliber_2011_deck.jpg</A_MEDIA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/3/cabrinha_caliber_2011_bottom.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>13</A_STOCK>
+            </ARTICLE>
+        </ARTICLEDATA>
+    </PRODUCT>
+    <PRODUCT>
+        <P_NR>1501</P_NR>
+        <P_NAME>
+            <VALUE xml:lang="x-default">Klebeband DACRON KITEFIX</VALUE>
+        </P_NAME>
+        <P_TEXT>
+            <VALUE xml:lang="x-default">
+Klebeband Dacron Kitefix
+
+Das selbstklebende Dacron
+Klebeband ist ideal, um eine GluFix und FiberFix Reparatur an der
+Leading Edge oder den Struts Ihres Kites zu verstärken.  Sie sind gerade
+ vom Wasser gekommen und haben einen Riss im Tuchmaterial Ihres Kites
+entdeckt? Verwenden Sie das Dacron Klebeband, um eine schnelle,
+temporäre Reparatur durchzuführen. Erhältlich in weiß, schwarz, grün,
+rot und blau.
+ 
+Jede Rolle ist ca. 5cm breit und ca. 152cm lang.
+ 
+ 
+</VALUE>
+        </P_TEXT>
+        <P_KEYWORDS>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">klebeband</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">kite</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">reparieren</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">kitefix</VALUE>
+            </P_KEYWORD>
+        </P_KEYWORDS>
+        <P_MEDIADATA>
+            <P_MEDIA type="image" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/kitefix_self-adhesive_dacron_1.jpg</P_MEDIA>
+        </P_MEDIADATA>
+        <P_CATEGORIES>
+            <P_CATEGORY type="cluster" identifier="key" key="Zubehör">Kiteboarding|Zubehör</P_CATEGORY>
+        </P_CATEGORIES>
+        <ARTICLEDATA>
+            <ARTICLE>
+                <A_NR>400-01</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883305</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>05833e961f65616e55a2208c2ed7c6b8</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">weiß</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>7.99</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/kitefix_self-adhesive_dacron_1.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>6</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>400-03</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883312</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>058c7b525aad619d8b343c0ffada0247</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">schwarz</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>7.99</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/kitefix_self-adhesive_dacron_1.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>5</A_STOCK>
+            </ARTICLE>
+        </ARTICLEDATA>
+    </PRODUCT>
+    <PRODUCT>
+        <P_NR>3570</P_NR>
+        <P_NAME>
+            <VALUE xml:lang="x-default">Kuyichi Jeans ANNA</VALUE>
+        </P_NAME>
+        <P_TEXT>
+            <VALUE xml:lang="x-default">
+Eine lockere und lässige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.
+
+100% ökologisch angebaute Baumwolle, 100% Fair Trade.
+
+
+</VALUE>
+        </P_TEXT>
+        <P_BRAND identifier="key" key="Kuyichi">Kuyichi</P_BRAND>
+        <P_KEYWORDS>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">jeans</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">anna</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">kuyichi</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">lässig</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">locker</VALUE>
+            </P_KEYWORD>
+        </P_KEYWORDS>
+        <P_MEDIADATA>
+            <P_MEDIA type="image" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</P_MEDIA>
+        </P_MEDIADATA>
+        <P_CATEGORIES>
+            <P_CATEGORY type="cluster" identifier="key" key="Jeans">Bekleidung|Fashion|Für Sie|Jeans</P_CATEGORY>
+        </P_CATEGORIES>
+        <ARTICLEDATA>
+            <ARTICLE>
+                <A_NR>0702-85-853-1-1</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883329</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6efaa522be53c3e86fdb41f0542a8a</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 30/L 30</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Blau</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>99.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>15</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-1-2</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883336</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b65c82bfe8fa19865d560f8c1a905b4</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 30/L 30</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Smoke Gray</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>99.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>21</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-1-3</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883343</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6ee4ad0a02a725a136ca139e226dd5</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 30/L 30</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Super Blue</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>99.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>4</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-6-1</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883350</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b628e6a8ffa98fea6f2ee9d708b1b23</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 31/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Blau</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>92.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>22</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-6-2</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883367</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6e2c7af07fd2b9d82223ff35f4e08f</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 31/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Smoke Gray</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>92.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>2</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-6-3</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883374</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6d187d3f648ab5d7875ce863244095</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 31/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Super Blue</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>92.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>30</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-12-1</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883381</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b65295a7fe5fa6faaa2f0ac3f9b0f80</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 34/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Blau</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>109.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>12</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-12-2</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883398</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6e0bb9f2b8b5f070f91593073b4555</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 34/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Smoke Gray</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>99.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>16</A_STOCK>
+            </ARTICLE>
+            <ARTICLE>
+                <A_NR>0702-85-853-12-3</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883404</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>6b6cf1ed0c0b3e784b05b1c9c207d352</A_NR2>
+                <A_VARIANTDATA>
+                    <A_VARIANT identifier="key" key="Größe">
+                        <VALUE xml:lang="x-default">W 34/L 34</VALUE>
+                    </A_VARIANT>
+                    <A_VARIANT identifier="key" key="Farbe">
+                        <VALUE xml:lang="x-default">Super Blue</VALUE>
+                    </A_VARIANT>
+                </A_VARIANTDATA>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>99.90</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/front(4)_v_pi.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>1</A_STOCK>
+            </ARTICLE>
+        </ARTICLEDATA>
+    </PRODUCT>
+    <PRODUCT>
+        <P_NR>1402</P_NR>
+        <P_NAME>
+            <VALUE xml:lang="x-default">Trapez ION MADTRIXX</VALUE>
+        </P_NAME>
+        <P_TEXT>
+            <VALUE xml:lang="x-default">
+ION Madtrixx Kite Waist
+    Neues Freestyle Trapez mit einer schlank
+geschnittenen Outline und Neopren-Schutzkissen innen. Dank der
+elastischen Ausschnitte im hinteren Teil des Trapezes bietet es ein
+Maximum an Flexibilität. Die neue Kontur Form mit Wrap Tec garantiert
+eine perfekte Passform.
+
+Ausstattungsmerkmale:
+
+Hip Protection
+  Die Double-Layer-Schaumstoff-Polsterung schützt die Knochen und alle
+anderen ungeschützten Teile in diesem Bereich. Besonders, wenn der
+Körper seitlich gebeugt ist.
+Cross Link Webbing
+  Normalerweise enden die Gurtbandenden irgendwo hinter der Schnalle.
+Ein ununterbrochenes Gurtband entlang der Rückseite des Trapezes
+garantiert eine bessere Kraftverteilung
+Internal Flex Belt
+  Flexibler Hüftgurt , sichert einen festen und bequemen Sitz des Trapezes
+Handle Pass Leash Slider
+  Ein kleiner Metallring lässt die Leash entlang der Rückseite des Trapezes gleiten und macht Handle Pass Tricks einfacher
+Push Button Spreader Bar
+  Der Druckknopf unterstützt die schnelle Montage des Trapezes. Es
+besteht keine Notwendigkeit, alle Klettbänder an den  Schnallen zu
+montieren. Schließ einfach den Metallring in der Spreader Bar, pass das
+Gurtband an und los geht's.
+Belt Garage
+  Verhindert ein Herumfliegen des Gurtbandes
+Protection Pads
+  Eine solide, neoprengepolsterte Platte, hält den Trapezhaken vom Körper fern
+Contour shape
+  vorgeformte Konstruktion
+Elasto Tec
+  Flexible Ausschnitte in Hüfttrapezen sorgen für ein Maximum an  Flexibilität im hinteren Teil des Trapezes.
+Weicher Rand des Trapezes
+Support Cushion
+Twister
+Wrap Tech
+  Vorgeformte Trapezkonstruktion, die sich besser am Körper anpasst</VALUE>
+        </P_TEXT>
+        <P_BRAND identifier="key" key="ION">ION</P_BRAND>
+        <P_KEYWORDS>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">trapez</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">hüfttrapez</VALUE>
+            </P_KEYWORD>
+            <P_KEYWORD>
+                <VALUE xml:lang="x-default">madtrixx</VALUE>
+            </P_KEYWORD>
+        </P_KEYWORDS>
+        <P_MEDIADATA>
+            <P_MEDIA type="image" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/ion_madtrixx_kite_waist_2011_1.jpg</P_MEDIA>
+        </P_MEDIADATA>
+        <P_CATEGORIES>
+            <P_CATEGORY type="cluster" identifier="key" key="Trapeze">Kiteboarding|Trapeze</P_CATEGORY>
+        </P_CATEGORIES>
+        <ARTICLEDATA>
+            <ARTICLE>
+                <A_NR>1402</A_NR>
+                    <A_ACTIVEDATA>
+                        <A_ACTIVE channel="amde">1</A_ACTIVE>
+                    </A_ACTIVEDATA>
+                <A_ACTIVE>1</A_ACTIVE>
+                <A_EAN>2116335883411</A_EAN>
+                <A_PROD_NR></A_PROD_NR>
+                <A_NR2>05848170643ab0deb9914566391c0c63</A_NR2>
+                <A_PRICEDATA>
+                    <A_PRICE channel="amde">
+                        <A_VK>159.00</A_VK>
+                        <A_MWST>2</A_MWST>
+                    </A_PRICE>
+                </A_PRICEDATA>
+                <A_MEDIADATA>
+                    <A_MEDIA type="IMAGE" sort="0">https://mollie.fatchip.demoshop.rocks/out/pictures/master/product/1/ion_madtrixx_kite_waist_2011_1.jpg</A_MEDIA>
+                </A_MEDIADATA>
+                <A_STOCK>15</A_STOCK>
+            </ARTICLE>
+        </ARTICLEDATA>
+    </PRODUCT>
+</PRODUCTDATA>
+</TBCATALOG>

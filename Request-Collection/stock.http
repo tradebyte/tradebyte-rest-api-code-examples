@@ -1,0 +1,18 @@
+### Stock
+GET https://rest.trade-server.net/{{merchantId}}/stock/?channel={{channelId}}
+Accept: application/xml
+Authorization: basic {{username}} {{password}}
+
+### Post Stock data
+POST https://rest.trade-server.net/{{merchantId}}/articles/stock/?channel={{channelId}}
+Authorization: basic {{username}} {{password}}
+Content-Type: application/xml
+
+<TBSTOCK changedate="1626947169">
+    <ARTICLE>
+        <A_NR>2401</A_NR>
+        <A_STOCK>53</A_STOCK>
+    </ARTICLE>
+</TBSTOCK>
+
+###

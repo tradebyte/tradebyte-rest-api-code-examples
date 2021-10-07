@@ -20,8 +20,12 @@ $sApiPassword = 'fatchip123'; // Your API password
 $sMerchantId = '1566'; // Your digit merchant ID
 $sChannelId = '1289'; // Your digit channel ID
 $fileType = "invoice";
-//$fileType = "deliverynote";
-// $fileType = "shiplabel";
+/**
+ * other possible values
+ *
+ * $fileType = "deliverynote";
+ * $fileType = "shiplabel";
+ */
 $options = [
     "auth_basic" => [
         $sApiUser, $sApiPassword
@@ -34,7 +38,7 @@ echo $url;
 
 try {
     $response = $client->request('GET', $url, $options);
-    print_r($response->getHeaders());
+    print_r($response->getContent());
 } catch (Exception $exception) {
     echo $exception->getMessage();
 }
